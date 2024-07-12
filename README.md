@@ -1,6 +1,6 @@
 # IRC URL Headline Bot
 
-IRC URL Headline Bot is an IRC bot designed to enhance your IRC channel experience by fetching webpage titles, specifically for YouTube links, and handling various connection and messaging functionalities.
+IRC URL Headline Bot is an IRC bot designed to enhance your IRC channel experience by fetching webpage titles and YouTube links, and handling various connection and messaging functionalities.
 
 ## Table of Contents
 
@@ -14,6 +14,7 @@ IRC URL Headline Bot is an IRC bot designed to enhance your IRC channel experien
 - [Installation](#installation)
 - [Usage](#usage)
 - [Configuration](#configuration)
+- [Running the Bot in Screen](#running-the-bot-in-screen)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -73,6 +74,33 @@ def main():
     channels = {"#Twisted": None, "#g6": None}
     nickname = "u"
 ```
+
+## Running the Bot in Screen
+
+To keep the bot running continuously, you can use the `screen` utility:
+
+1. Install screen if it's not already installed:
+    ```bash
+    sudo apt-get install screen
+    ```
+
+2. Start a new screen session:
+    ```bash
+    screen -S IRCBotSession
+    ```
+
+3. Run the bot inside the screen session:
+    ```bash
+    python3 IRCURLHeadlineBot.py
+    ```
+
+4. Detach from the screen session without stopping the bot:
+    Press `Ctrl + A` then `D`.
+
+5. To reattach to the screen session later:
+    ```bash
+    screen -r IRCBotSession
+    ```
 
 ## Contributing
 
