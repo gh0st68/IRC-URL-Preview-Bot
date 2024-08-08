@@ -82,7 +82,7 @@ class GhostBot(irc.bot.SingleServerIRCBot):
 
 def main():
     server = "irc.twistednet.org"
-    channels = {"#Twisted": None, "#g6": None}
+    channels = {"#twisted": None, "#dev": None, "#channel2": None}
     nickname = "u"
 
     bot = GhostBot(channels, nickname, server)
